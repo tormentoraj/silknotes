@@ -31,7 +31,7 @@ jobs:
           cache-disabled: true
 
       - name: Assemble debug APK
-        run: gradle assembleDebug --no-daemon --stacktrace --refresh-dependencies
+        run: gradle clean assembleDebug --no-daemon --stacktrace --refresh-dependencies --no-build-cache
 
       - name: Report
         run: |
