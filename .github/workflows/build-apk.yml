@@ -30,7 +30,7 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Assemble debug APK
-        run: gradle assembleDebug --no-daemon --stacktrace --info
+        run: gradle assembleDebug --no-daemon --stacktrace
 
       - name: Report
         run: |

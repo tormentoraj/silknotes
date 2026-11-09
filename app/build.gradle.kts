@@ -67,20 +67,17 @@ android {
 }
 
 dependencies {
-    // Compose BOM
-    implementation(platform("androidx.compose:compose-bom:2024.12.01"))
-
-    // Core Compose
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-text")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.material3:material3-window-size-class")
-    implementation("androidx.compose.material:material-icons-extended")
-    implementation("androidx.compose.foundation:foundation")
-    implementation("androidx.compose.runtime:runtime-livedata")
-    implementation("androidx.compose.runtime:runtime-saveable")
+    // Core Compose (using versions from Compose BOM 2024.12.01)
+    implementation("androidx.compose.ui:ui:1.7.5")
+    implementation("androidx.compose.ui:ui-graphics:1.7.5")
+    implementation("androidx.compose.ui:ui-text:1.7.5")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.7.5")
+    implementation("androidx.compose.material3:material3:1.3.0")
+    implementation("androidx.compose.material3:material3-window-size-class:1.3.0")
+    implementation("androidx.compose.material:material-icons-extended:1.7.5")
+    implementation("androidx.compose.foundation:foundation:1.7.5")
+    implementation("androidx.compose.runtime:runtime-livedata:1.7.5")
+    implementation("androidx.compose.runtime:runtime-saveable:1.7.5")
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
@@ -125,12 +122,11 @@ dependencies {
     testImplementation("org.mockito:mockito-core:5.12.0")
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
 
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.12.01"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    androidTestImplementation("androidx.compose.ui:ui-test-manifest")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.7.5")
+    androidTestImplementation("androidx.compose.ui:ui-test-manifest:1.7.5")
     androidTestImplementation("androidx.activity:activity-compose:1.9.3")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-tooling-data")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.7.5")
+    debugImplementation("androidx.compose.ui:ui-tooling-data:1.7.5")
 
     // ConstraintLayout for tests
     androidTestImplementation("androidx.constraintlayout:constraintlayout-compose:1.1.0")
@@ -141,12 +137,4 @@ kapt {
     javacOptions {
         option("-Xlint:unchecked")
     }
-}// Mon Nov  9 12:18:25 UTC 2026
-// cache bust Mon Nov  9 12:36:20 UTC 2026
-// force rebuild Mon Nov  9 12:37:43 UTC 2026
-// cache bust Mon Nov  9 12:38:29 UTC 2026
-// force rebuild Mon Nov  9 12:48:33 UTC 2026
-// cache bust Mon Nov  9 12:50:43 UTC 2026
-// force rebuild Mon Nov  9 12:52:56 UTC 2026
-// force rebuild Mon Nov  9 12:55:14 UTC 2026
-// Cache bust Mon Nov  9 13:29:53 UTC 2026
+}
